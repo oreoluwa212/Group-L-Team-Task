@@ -1,0 +1,49 @@
+body {
+   font-family: Arial, sans-serif;
+}
+
+.container {
+   text-align: center;
+   margin: 50px;
+}
+
+input[type='tel'] {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   margin-right: 10px;
+}
+
+button {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#result {
+   margin: 20px;
+   font-size: 18px;
+}
+
+#main-container {
+   display: flex;
+   /* flex-direction: column; */
+}
+
+#mtn,
+#glo,
+#mobile,
+#airtel {
+   display: none;
+   margin-top: 30px;
+   margin-left: 550px;
+   /* margin-right: 10px 30px; */
+   width: 30px;
+   align-items: center;
+
+   gap: 20px;
+}
