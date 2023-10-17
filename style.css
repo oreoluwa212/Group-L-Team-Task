@@ -22,7 +22,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 80px;
+   gap: 60px;
    height: 80px;
    padding: 10px 30px;
    border-radius: 10px;
@@ -118,7 +118,7 @@ li {
 
 h2 {
    font-size: 34px;
-   width: 800px;
+   width: 600px;
    font-family: Poppins;
    font-weight: 600;
 }
@@ -191,7 +191,7 @@ label {
 .provider-logo {
    position: absolute;
    top: 38%;
-   left: 620px;
+   left: 500px;
    transform: translateY(-70%);
    width: 40px;
    height: 40px;
