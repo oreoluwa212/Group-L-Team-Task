@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Phone Number Carrier Identifier</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Phone Number Carrier Identifier</h1>
-      <input type="tel" id="phoneInput" placeholder="Enter your phone number" />
-      <button id="checkCarrier">Check Carrier</button>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Phonie | Group L</title>
+   <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+   <div class="nav-menu">
+      <nav class="nav-bar">
+         <div class="logo-div">
+            <img class="logo" src="./images/logo.jpg" alt="">
+            <h1 class="logo-text">Phonie</h1>
+         </div>
+         <ul class="nav-links">
+            <li><a href="">About</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Help Center</a></li>
+         </ul>
 
-      <div id="main-container">
-        <div id="mobile">
-          <img src="./images/9mobileLogo.jpeg" alt="" />
-        </div>
+         <div class="search-div">
+            <input type="text" class="search" placeholder="Search your network">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
 
-        <div id="airtel">
-          <img src="./images/airtelLogo.png" alt="" />
-        </div>
+         </div>
 
-        <div id="glo">
-          <img src="./images/gloLogo.png" alt="" />
-        </div>
-
-        <div id="mtn">
-          <img src="./images/mtnLogo2.png" alt="" />
-        </div>
+         <div class="register">
+            <button class="reg-btn">
+               Register
+            </button>
+         </div>
+      </nav>
+   </div>
+   <div class="container">
+      <div class="left-column">
+         <img class="right-img" src="./images/img.jpg" alt="">
       </div>
+      <div class="right-column">
+         <h2>Identify the telecoms carrier from a phone number with <span>Phonie</span></h2>
+         <form action="" class="inner-container">
+            <div class="display">
+               <label for="phone">Phone Number:</label>
+               <input type="text" class="phone" placeholder="Enter your phone number" maxlength="14">
+            </div>
+            <div class="provider-logo"></div>
+         </form>
+      </div>
+   </div>
 
-      <div id="result"></div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+
+   <script src="https://kit.fontawesome.com/d406be7fc0.js" crossorigin="anonymous"></script>
+   <script src="./js/index.js"></script>
+</body>
+
 </html>
