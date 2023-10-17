@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Phonie | Group L</title>
-   <link rel="stylesheet" href="./css/home.css">
+   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
    <div class="nav-menu">
@@ -42,18 +42,21 @@
       <div class="right-column">
          <h2>Identify the telecoms carrier from a phone number with <span>Phonie</span></h2>
          <form action="" class="inner-container">
-            <div class="display">
-               <label for="phone">Phone Number:</label>
-               <input type="text" class="phone" placeholder="Enter your phone number" maxlength="14">
+            <div>
+               <div class="display">
+                  <label for="phone">Phone Number:</label>
+                  <input type="text" class="phone" placeholder="Enter your phone number" maxlength="11">
+               </div>
+               <div class="provider-logo"></div>
             </div>
-            <div class="provider-logo"></div>
+            <div class="error"><p>Carrier: Unknown</p></div>
          </form>
       </div>
    </div>
 
 
    <script src="https://kit.fontawesome.com/d406be7fc0.js" crossorigin="anonymous"></script>
-   <script src="./js/index.js"></script>
+   <script src="./script.js"></script>
 </body>
 
 </html>

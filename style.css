@@ -65,10 +65,6 @@ li {
    font-family: 'Poppins', sans-serif;
 }
 
-.search-div i {
-   /* position: absolute; */
-}
-
 .search {
    padding: 16px;
    width: 250px;
@@ -78,7 +74,6 @@ li {
    color: #ECFAFF;
    letter-spacing: .1rem;
    border-radius: 10px;
-   /* position: absolute; */
 }
 
 .search::placeholder {
@@ -115,7 +110,8 @@ li {
 .right-column {
    padding-top: 30px;
 }
-.right-img{
+
+.right-img {
    width: 350px;
    height: 380px;
 }
@@ -143,15 +139,19 @@ span {
    align-items: center;
    gap: 20px;
 }
+
 .inner-container {
-   background: #212844;
    margin-top: 30px;
    padding: 20px;
    border-radius: 10px;
    position: relative;
-   color: #fff;
    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
 }
+
 label {
    font-size: 18px;
    font-family: Open;
@@ -174,8 +174,8 @@ label {
 }
 
 .display {
-   color: white;
-} 
+}
+
 .check-carrier {
    font-size: 16px;
    padding: 5px;
@@ -190,8 +190,8 @@ label {
 
 .provider-logo {
    position: absolute;
-   top: 55%;
-   left: 500px;
+   top: 38%;
+   left: 620px;
    transform: translateY(-70%);
    width: 40px;
    height: 40px;
@@ -214,4 +214,20 @@ label {
 
 .provider-logo.nineMobile {
    background-image: url('../images/9mobile.png');
+}
+
+
+.error {
+   visibility: hidden;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   color: hsl(0, 100%, 50%);
+   font-size: 30px;
+}
+
+.error.errormsg {
+   visibility: visible;
+   display: flex;
 }
