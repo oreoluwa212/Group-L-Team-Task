@@ -1,50 +1,217 @@
-body {
-   background: linear-gradient(to right, #5BC0DE, #3498DB);
-   font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&family=Poppins&display=swap');
+
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
+
+body {
+   background: #ECFAFF;
+}
+
+.nav-menu {
+   padding: 20px 5%;
+}
+
+.nav-bar {
+   background: #FDFDFD;
+   z-index: -1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 80px;
+   height: 80px;
+   padding: 10px 30px;
+   border-radius: 10px;
+}
+
+.logo-div {
+   align-items: center;
+   gap: 15px;
+   display: flex;
+}
+
+.logo {
+   border-radius: 50%;
+   height: 50px;
+}
+
+.logo-text {
+   font-size: 26px;
+   font-family: 'Bebas Neue', sans-serif;
+   letter-spacing: .2rem;
+   color: #212844;
+   box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+a {
+   text-decoration: none;
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 30px;
+   padding-left: 40px;
+   justify-content: center;
+   align-items: center;
+}
+
+li {
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.search-div i {
+   /* position: absolute; */
+}
+
+.search {
+   padding: 16px;
+   width: 250px;
+   outline: 0;
+   background: #212844;
+   border: 0;
+   color: #ECFAFF;
+   letter-spacing: .1rem;
+   border-radius: 10px;
+   /* position: absolute; */
+}
+
+.search::placeholder {
+   color: white;
+   font-size: 14px;
+   padding: 25px;
+   letter-spacing: .2rem;
+}
+
+.icon {
+   padding: 10px;
+   min-width: 40px;
+   color: white;
+   font-size: 20px;
+   font-family: Open;
+}
+
+.reg-btn {
+   padding: 12px 60px;
+   font-size: 18px;
+   color: #fff;
+   border-radius: 10px;
+   border: 0;
+   background: coral;
+}
+
 
 .container {
-   text-align: center;
-   margin: 50px;
+   padding: 70px 12%;
+   display: grid;
+   grid-template-columns: 2fr 3fr;
 }
 
-input[type='tel'] {
-   padding: 10px;
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   font-size: 16px;
-   margin-right: 10px;
+.right-column {
+   padding-top: 30px;
+}
+.right-img{
+   width: 350px;
+   height: 380px;
 }
 
-button {
-   padding: 10px 20px;
-   background-color: #000;
-   color: white;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
+h2 {
+   font-size: 34px;
+   width: 800px;
+   font-family: Poppins;
+   font-weight: 600;
 }
 
-#result {
-   margin: 20px;
-   font-size: 18px;
+p {
+   font-size: 28px;
+   font-family: Open;
 }
 
-#main-container {
+span {
+   color: coral;
+   font-size: 38px;
+}
+
+.validation {
+   margin-top: 40px;
    display: flex;
-   /* flex-direction: column; */
+   align-items: center;
+   gap: 20px;
+}
+.inner-container {
+   background: #212844;
+   margin-top: 30px;
+   padding: 20px;
+   border-radius: 10px;
+   position: relative;
+   color: #fff;
+   display: flex;
+}
+label {
+   font-size: 18px;
+   font-family: Open;
+   font-weight: bold;
 }
 
-#mtn,
-#glo,
-#mobile,
-#airtel {
-   display: none;
-   margin-top: 30px;
-   margin-left: 550px;
-   /* margin-right: 10px 30px; */
-   width: 30px;
-   align-items: center;
+.phone {
+   padding: 18px 26px;
+   outline: 0;
+   width: 400px;
+   border: 0;
+   box-shadow: 4px 4px 2px #212844;
+   letter-spacing: .2rem;
+   margin-left: 20px;
+}
 
-   gap: 20px;
+.phone::placeholder {
+   letter-spacing: .2rem;
+   font-size: 14px;
+}
+
+.display {
+   color: white;
+} 
+.check-carrier {
+   font-size: 16px;
+   padding: 5px;
+   color: #fff;
+   border-radius: 10px;
+   height: 45px;
+   width: 150px;
+   border: 0;
+   background: coral;
+   box-shadow: 4px 4px 2px #a9abb3;
+}
+
+.provider-logo {
+   position: absolute;
+   top: 55%;
+   left: 500px;
+   transform: translateY(-70%);
+   width: 40px;
+   height: 40px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   border-radius: 20px;
+}
+
+.provider-logo.mtn {
+   background-image: url('../images/mtn.png');
+}
+
+.provider-logo.glo {
+   background-image: url('../images/glo.png');
+}
+
+.provider-logo.airtel {
+   background-image: url('../images/airtel.png');
+}
+
+.provider-logo.nineMobile {
+   background-image: url('../images/9mobile.png');
 }
