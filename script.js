@@ -1,41 +1,27 @@
-document.getElementById("checkCarrier").addEventListener("click", function () {
-  const mtn = document.getElementById("mtn");
-  const glo = document.getElementById("glo");
-  const airtel = document.getElementById("airtel");
-  const mobile = document.getElementById("mtn");
-  const phoneInput = document.getElementById("phoneInput").value;
-  const resultElement = document.getElementById("result");
-  const carrier = detectCarrier(phoneInput);
-  if (carrier) {
-    resultElement.innerHTML = `Carrier: ${carrier}`;
-  } else {
-    resultElement.innerHTML = "Unable to detect carrier.";
-  }
-});
+const phoneInput = document.querySelector(".phone");
+const providerLogo = document.querySelector(".provider-logo");
 
-function detectCarrier(phoneNumber) {
-  // Regular expressions to match carrier patterns
-  const mtnPattern =
-    /^(\+234|0)(702|703|704|706|707|708|709|803|804|805|806|810|812|814|816|909|907)/;
-  const gloPattern =
-    /^(\+234|0)(705|805|705|805|811|812|903|905|906|915|916|917|927|927|936|937)/;
-  const airtelPattern =
-    /^(\+234|0)(701|702|703|702|703|706|707|708|708|802|802|902|902|903|903|904|904|905|901|701|701)/;
-  const etisalatPattern = /^(\+234|0)(808|809|909|807|817|908|817|908|909|807)/;
+function detectProvider(phoneNumber) {
+  const mtnPattern = /^(\+234|0)(703|706|803|806|810|813|814|816|903|906|913)/;
+  const gloPattern = /^(\+234|0)(705|805|807|811|815|905)/;
+  const airtelPattern = /^(\+234|0)(701|708|802|808|812|902|907|901)/;
+  const etisalatPattern = /^(\+234|0)(809|817|818|908|909|807)/;
+
+  providerLogo.classList.remove("mtn", "glo", "airtel", "nineMobile");
 
   if (mtnPattern.test(phoneNumber)) {
-    mtn.style.display = "block";
-    return "MTN";
+    providerLogo.classList.add("mtn");
   } else if (gloPattern.test(phoneNumber)) {
-    glo.style.display = "block";
-    return "Glo";
+    providerLogo.classList.add("glo");
   } else if (airtelPattern.test(phoneNumber)) {
-    airtel.style.display = "block";
-    return "Airtel";
+    providerLogo.classList.add("airtel");
   } else if (etisalatPattern.test(phoneNumber)) {
-    mobile.style.display = "block";
-    return "9mobile";
-  } else {
-    return "Unknown";
+    providerLogo.classList.add("nineMobile");
   }
 }
+
+// Event listener to detect changes in the input field
+phoneInput.addEventListener("input", function () {
+  const phoneNumber = this.value;
+  detectProvider(phoneNumber);
+});
