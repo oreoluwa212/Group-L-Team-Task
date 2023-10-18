@@ -104,7 +104,7 @@ li {
 .container {
    padding: 70px 12%;
    display: grid;
-   grid-template-columns: 2fr 3fr;
+   grid-template-columns: 1fr 2fr;
 }
 
 .right-column {
@@ -114,6 +114,7 @@ li {
 .right-img {
    width: 350px;
    height: 380px;
+   padding-right: 40px;
 }
 
 h2 {
