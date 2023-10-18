@@ -13,25 +13,25 @@ body {
 }
 
 .nav-menu {
-   padding: 20px 5%;
+   padding: 20px 3%;
 }
 
 .nav-bar {
    background: #FDFDFD;
-   z-index: -1;
    display: flex;
    align-items: center;
-   justify-content: center;
-   gap: 60px;
+   justify-content: space-between;
    height: 80px;
-   padding: 10px 30px;
+   padding: 10px 4%;
    border-radius: 10px;
+   width: 100vw;
 }
 
 .logo-div {
    align-items: center;
    gap: 15px;
-   display: flex;
+   display: inline-flex;
+   padding-left: 20px;
 }
 
 .logo {
@@ -65,31 +65,6 @@ li {
    font-family: 'Poppins', sans-serif;
 }
 
-.search {
-   padding: 16px;
-   width: 250px;
-   outline: 0;
-   background: #212844;
-   border: 0;
-   color: #ECFAFF;
-   letter-spacing: .1rem;
-   border-radius: 10px;
-}
-
-.search::placeholder {
-   color: white;
-   font-size: 14px;
-   padding: 25px;
-   letter-spacing: .2rem;
-}
-
-.icon {
-   padding: 10px;
-   min-width: 40px;
-   color: white;
-   font-size: 20px;
-   font-family: Open;
-}
 
 .reg-btn {
    padding: 12px 60px;
@@ -174,9 +149,6 @@ label {
    font-size: 14px;
 }
 
-.display {
-}
-
 .check-carrier {
    font-size: 16px;
    padding: 5px;
@@ -231,4 +203,109 @@ label {
 .error.errormsg {
    visibility: visible;
    display: flex;
+}
+
+
+
+
+
+/* --------------- Media Queries --------------- */
+@media screen and (max-width: 1200px) {
+   /* CSS styles for screens with a width of 1200 pixels or less */
+
+   .reg-btn {
+      padding: 12px 30px;
+      font-size: 14px;
+      transition: 850ms;
+   }
+
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .right-img {
+      width: 500px;
+      height: 400px;
+      padding-right: 40px;
+      transition: 850ms;
+   }
+
+   h2 {
+      font-size: 34px;
+      width: 500px;
+      font-family: Poppins;
+      font-weight: 600;
+      text-align: center;
+   }
+}
+
+
+
+@media screen and (max-width: 751px) {
+   /* CSS styles for screens with a width of 751 pixels or less */
+
+   .nav-links {
+      display: none;
+   }
+
+   .provider-logo {
+      position: absolute;
+      top: 44%;
+      left: 380px;
+      transform: translateY(-70%);
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 20px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   /* CSS styles for screens with a width of 500 pixels or less */
+
+   .nav-bar{
+      display: none;
+   }
+
+   .container {
+      margin-left: 50px;
+   }
+
+   .right-img {
+      width: 350px;
+      transition: 850ms;
+   }
+
+   h2 {
+      font-size: 18px;
+      width: 400px;
+      padding: 20px;
+      text-align: left;
+   }
+
+   .display {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      transition: 850ms;
+   }
+
+   .phone {
+      width: 90%;
+      transition: 850ms;
+   }
+
+   .provider-logo {
+      position: absolute;
+      top: 53%;
+      left: 280px;
+      transform: translateY(-70%);
+      width: 30px;
+      height: 30px;
+
+   }
 }
