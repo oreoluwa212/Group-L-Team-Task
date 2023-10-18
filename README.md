@@ -1,12 +1,17 @@
-# Group L Team Task 
+# Phonie
 
-<small>DCTP Phonie task - telecoms carrier test when 11 digits is typed into an input field</small>
+Phonie is a simple web application that identifies the phone service provider of any MTN, Airtel, Glo, or 9Mobile mobile phone number.
+
+Don't want to type in the full phone number? Just type in the first four digits of the number (eg 0703... ) or the country code and the first three digits of the number ( eg +234703... ) and get an immediate response without having to click a button.
+
+## Preview
 
 ![Screenshot](./images/deployed.png)
 
 
-# Group members are :
+## Group members
 
-* Adebolu Ayodeji
-* Oreoluwa Ruth Ajayi
-* Okoroafor Wisdom Onyinye
+* [Adebolu Ayodeji]()
+* [Oreoluwa Ruth Ajayi](https://github.com/oreoluwa212)
+* [Okoroafor Wisdom Onyinye]()
+* [Petra Ojamanhor](https://github.com/Petra-Cae)
