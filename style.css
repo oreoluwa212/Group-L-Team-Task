@@ -13,7 +13,7 @@ body {
 }
 
 .nav-menu {
-   padding: 20px 3%;
+   padding: 20px 15%;
 }
 
 .nav-bar {
@@ -24,7 +24,6 @@ body {
    height: 80px;
    padding: 10px 4%;
    border-radius: 10px;
-   width: 100vw;
 }
 
 .logo-div {
@@ -67,7 +66,7 @@ li {
 
 
 .reg-btn {
-   padding: 12px 60px;
+   padding: 12px 40px;
    font-size: 18px;
    color: #fff;
    border-radius: 10px;
@@ -242,7 +241,12 @@ label {
    }
 }
 
-
+@media screen and (max-width: 983px) {
+   /* CSS styles for screens with a width of 1200 pixels or less */
+   .nav-links{
+      display: none;
+   }
+}
 
 @media screen and (max-width: 751px) {
    /* CSS styles for screens with a width of 751 pixels or less */
