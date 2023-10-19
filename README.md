@@ -11,7 +11,7 @@ Don't want to type in the full phone number? Just type in the first four digits 
 
 ## Group members
 
-* [Adebolu Ayodeji]()
+* [Adebolu Ayodeji](https://github.com/Adeyod)
 * [Oreoluwa Ruth Ajayi](https://github.com/oreoluwa212)
 * [Okoroafor Wisdom Onyinye]()
 * [Petra Ojamanhor](https://github.com/Petra-Cae)
