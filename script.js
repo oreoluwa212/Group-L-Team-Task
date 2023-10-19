@@ -62,7 +62,19 @@ function submitAlert(){
   else {
   const alertMsg = document.querySelector(".submit-button")
   alertMsg.innerHTML= "form submitted"
-  alert('thank you for submitting')
+
+  // Show a custom modal or message div
+    const modal = document.getElementById('custom-modal');
+    modal.style.display = 'block';
+
+    // Add an event listener to handle "OK" button click
+    const okButton = document.getElementById('ok-button');
+    okButton.addEventListener('click', function () {
+      modal.style.display = 'none'; // Hide the modal
+      alertMsg.innerHTML = 'Click here to submit'; // Reset the button text
+    });
+    
+  // alert('thank you for submitting')
   }
 }
 const alertMsg = document.querySelector(".submit-button")
