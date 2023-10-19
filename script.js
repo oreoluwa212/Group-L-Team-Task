@@ -49,8 +49,11 @@ phoneInput.addEventListener("input", function () {
 
 //OnClick function for submit alert
 function submitAlert(){
-  const inputvalue = phoneInput.value;
-  if (inputvalue.length < 11) {
+  const inputValue = phoneInput.value;
+  if (inputValue.length < 11 && !inputValue.startsWith('+234')) {
+    alert("Incomplete Phone Number")
+  }
+  else if (inputValue.length < 14 && inputValue.startsWith('+234')) {
     alert("Incomplete Phone Number")
   }
   else {
