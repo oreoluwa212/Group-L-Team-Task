@@ -49,12 +49,18 @@ phoneInput.addEventListener("input", function () {
 
 //OnClick function for submit alert
 function submitAlert(){
+  const inputvalue = phoneInput.value;
+  if (inputvalue.length < 11) {
+    alert("Incomplete Phone Number")
+  }
+  else {
   const alertMsg = document.querySelector(".submit-button")
   alertMsg.innerHTML= "form submitted"
-
   alert('thank you for submitting')
+  }
 }
 const alertMsg = document.querySelector(".submit-button")
 alertMsg.onclick=function(){
   submitAlert()
+  
 }
