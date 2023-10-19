@@ -16,3 +16,6 @@ Don't want to type in the full phone number? Just type in the first four digits 
 * [Okoroafor Wisdom Onyinye]()
 * [Petra Ojamanhor](https://github.com/Petra-Cae)
 * [Nnenna Onwuka](https://github.com/Nne1509)
+* [Doreen Iyere Enebi](https://github.com/Deetechdiva)
+* [Abubakar Umar](https://github.com/abksidiq)
+
