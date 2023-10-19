@@ -15,4 +15,4 @@ Don't want to type in the full phone number? Just type in the first four digits 
 * [Oreoluwa Ruth Ajayi](https://github.com/oreoluwa212)
 * [Okoroafor Wisdom Onyinye]()
 * [Petra Ojamanhor](https://github.com/Petra-Cae)
-* [Nnenna Onwuka] (https://github.com/Nne1509)
+* Nnenna Onwuka(https://github.com/Nne1509)
