@@ -53,6 +53,9 @@ function submitAlert(){
   if (inputValue.length < 11 && !inputValue.startsWith('+234')) {
     alert("Incomplete Phone Number")
   }
+  else if (inputValue.length === 14 && !inputValue.startsWith('+234')) {
+    alert("Incomplete Phone Number")
+  }
   else if (inputValue.length < 14 && inputValue.startsWith('+234')) {
     alert("Incomplete Phone Number")
   }
