@@ -3,6 +3,7 @@ const phoneInput = document.querySelector(".phone");
 const providerLogo = document.querySelector(".provider-logo");
 const errormsg = document.querySelector('.error');
 
+
 // Declare a function called detectProvider() that takes a phone number as input and returns the name of the telecoms carrier.
 function detectProvider(phoneNumber) {
 
@@ -44,3 +45,16 @@ phoneInput.addEventListener("input", function () {
     errormsg.classList.remove('errormsg')
   }
 });
+
+
+//OnClick function for submit alert
+function submitAlert(){
+  const alertMsg = document.querySelector(".submit-button")
+  alertMsg.innerHTML= "form submitted"
+
+  alert('thank you for submitting')
+}
+const alertMsg = document.querySelector(".submit-button")
+alertMsg.onclick=function(){
+  submitAlert()
+}

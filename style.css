@@ -13,7 +13,7 @@ body {
 }
 
 .nav-menu {
-   padding: 20px 15%;
+   padding: 40px 5%;
 }
 
 .nav-bar {
@@ -53,7 +53,7 @@ a {
 .nav-links {
    list-style: none;
    display: flex;
-   gap: 30px;
+   gap: 50px;
    padding-left: 40px;
    justify-content: center;
    align-items: center;
@@ -76,17 +76,22 @@ li {
 
 
 .container {
-   padding: 70px 12%;
+   padding: 50px 12%;
    display: grid;
    grid-template-columns: 1fr 2fr;
 }
 
 .right-column {
    padding-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
 
 .right-img {
-   width: 350px;
+   width: 380px;
+   border-radius: 30%;
    height: 380px;
    padding-right: 40px;
 }
@@ -204,8 +209,15 @@ label {
    display: flex;
 }
 
-
-
+.submit-button{
+   width: 400px;
+   padding: 15px;
+   font-size: 18px;
+   border: 0;
+   background: coral;
+   color: white;
+   border-radius: 10px;
+}
 
 
 /* --------------- Media Queries --------------- */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
    <title>Phonie | Group L</title>
    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
    <div class="nav-menu">
       <nav class="nav-bar">
@@ -15,11 +17,14 @@
             <h1 class="logo-text">Phonie</h1>
          </div>
          <ul class="nav-links">
-            <li><a href="">About</a></li>
+            <li><a class="active"href="">About</a></li>
             <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
             <li><a href="">Reviews</a></li>
             <li><a href="">Help Center</a></li>
          </ul>
+
+         
 
          <div class="register">
             <button class="reg-btn">
@@ -42,8 +47,13 @@
                </div>
                <div class="provider-logo"></div>
             </div>
-            <div class="error"><p>Carrier: Unknown</p></div>
+            <div class="error">
+               <p>Carrier: Unknown</p>
+            </div>
          </form>
+         <div class="submit-div">
+            <button class="submit-button" onclick=submitAlert()>Click here to submit</button>
+         </div>
       </div>
    </div>
 
