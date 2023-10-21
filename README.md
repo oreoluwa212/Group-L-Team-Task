@@ -18,4 +18,4 @@ Don't want to type in the full phone number? Just type in the first four digits 
 * [Nnenna Onwuka](https://github.com/Nne1509)
 * [Doreen Iyere Enebi](https://github.com/Deetechdiva)
 * [Abubakar Umar](https://github.com/abksidiq)
-
+* [Victor Musa Ogima](https://github.com/Savitheorem)
